@@ -9,27 +9,27 @@ import UIKit
 import FirebaseAuth
 
 class Authentication: UIViewController {
-
+    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var registerLabel: UILabel! // Add this line to declare the label outlet
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Set up the sign in button
         signInBtn.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
-
+        
         // Set initial text for the register label
         registerLabel.text = "" // Initially set the label text to empty
     }
-
+    
     @objc func signInTapped() {
         // Get the user's email address and password
         let email = email.text!
         let password = password.text!
-
+        
         // Sign in the user
         Auth.auth().signIn(withEmail: email, password: password) { [self] result, error in
             if let error = error {
@@ -37,9 +37,17 @@ class Authentication: UIViewController {
                 registerLabel.text = "Please enter your email address or password to continue."
                 print(error.localizedDescription)
             } else {
-                // Update the register label text
-                registerLabel.text = "The email address or password is incorrect. Please retry"
-                print("log")// Update the label text to "ลงทะเบียนสำเร็จ"
+                // Check if the user is verified
+                if Auth.auth().currentUser?.isEmailVerified == true {
+                    // The user is verified, redirect to the next screen
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextScreenViewController")
+                    self.navigationController?.pushViewController(nextViewController, animated: true)
+                } else {
+                    // The user is not verified, display a message
+                    registerLabel.text = "Please verify your email address to proceed."
+                    print("Please verify your email address to proceed.")
+                }
             }
         }
     }
