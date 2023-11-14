@@ -10,6 +10,9 @@ import FirebaseCore
 class ViewController: UIViewController {
     
    //HELLO WORLD
+    
+    var test: String = "Man UTD Number 2"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             
