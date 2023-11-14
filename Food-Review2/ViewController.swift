@@ -8,8 +8,8 @@
 import UIKit
 import FirebaseCore
 class ViewController: UIViewController {
-    var you : String
-   
+    
+   //HELLO WORLD
     override func viewDidLoad() {
         super.viewDidLoad()
             
