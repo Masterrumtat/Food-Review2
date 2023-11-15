@@ -37,17 +37,9 @@ class Authentication: UIViewController {
                 registerLabel.text = "Please enter your email address or password to continue."
                 print(error.localizedDescription)
             } else {
-                // Check if the user is verified
-                if Auth.auth().currentUser?.isEmailVerified == true {
-                    // The user is verified, redirect to the next screen
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextScreenViewController")
-                    self.navigationController?.pushViewController(nextViewController, animated: true)
-                } else {
-                    // The user is not verified, display a message
-                    registerLabel.text = "Please verify your email address to proceed."
-                    print("Please verify your email address to proceed.")
-                }
+                // The user is verified, redirect to the next screen
+                let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "page1")
+                self.navigationController?.pushViewController(nextViewController!, animated: true)
             }
         }
     }
