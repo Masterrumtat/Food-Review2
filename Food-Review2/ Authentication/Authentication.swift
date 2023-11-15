@@ -6,7 +6,10 @@
 //
 
 import UIKit
+import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
+
 
 class Authentication: UIViewController {
     

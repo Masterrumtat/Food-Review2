@@ -15,5 +15,7 @@ target 'Food-Review2' do
   target 'Food-Review2UITests' do
     # Pods for testing
   end
-
+  target 'Food-Review2' do
+  pod 'GoogleSignInSDK', '~> 1.0'
+end
 end
