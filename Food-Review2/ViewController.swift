@@ -9,6 +9,7 @@ import UIKit
 import FirebaseCore
 class ViewController: UIViewController {
     var CT : Int = 0
+    //sdlodsocd
     
     
     override func viewDidLoad() {
