@@ -26,10 +26,10 @@
 		E44459D02B03A5E600D1550E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E44459CF2B03A5E600D1550E /* FirebaseFirestore */; };
 		E44459D52B03ACD800D1550E /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44459D42B03ACD800D1550E /* Authentication.swift */; };
 		E4445A0D2B03B3D900D1550E /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A0C2B03B3D900D1550E /* Register.swift */; };
-		E4445A132B05342600D1550E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A122B05342500D1550E /* Review.swift */; };
 		E4445A162B054F1B00D1550E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E4445A152B054F1B00D1550E /* GoogleSignIn */; };
 		E4445A182B054F1B00D1550E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4445A172B054F1B00D1550E /* GoogleSignInSwift */; };
 		E4445A1A2B0550AA00D1550E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4445A192B0550AA00D1550E /* GoogleService-Info.plist */; };
+		E4445A1C2B060FF300D1550E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A1B2B060FF300D1550E /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,8 @@
 		E44459B72B03A4D800D1550E /* Food_Review2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_Review2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E44459D42B03ACD800D1550E /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		E4445A0C2B03B3D900D1550E /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		E4445A122B05342500D1550E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		E4445A192B0550AA00D1550E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4445A1B2B060FF300D1550E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +204,7 @@
 		E4445A112B05340300D1550E /* page */ = {
 			isa = PBXGroup;
 			children = (
-				E4445A122B05342500D1550E /* Review.swift */,
+				E4445A1B2B060FF300D1550E /* Review.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				E44459972B03A4D600D1550E /* SceneDelegate.swift in Sources */,
 				E44459D52B03ACD800D1550E /* Authentication.swift in Sources */,
 				E4445A0D2B03B3D900D1550E /* Register.swift in Sources */,
-				E4445A132B05342600D1550E /* Review.swift in Sources */,
+				E4445A1C2B060FF300D1550E /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

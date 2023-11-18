@@ -6,16 +6,15 @@
 //
 
 import UIKit
-import FirebaseCore
+
 class ViewController: UIViewController {
-    var CT : Int = 0
-    //sdlodsocd
-    //push push
+   let searchController = UISearchController()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+            title = "Search"
+        navigationItem.searchController = searchController
 
         // Do any additional setup after loading the view.
     }

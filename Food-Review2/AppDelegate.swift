@@ -7,16 +7,17 @@
 
 import UIKit
 import Firebase
-
+import FirebaseFirestore
+import FirebaseCore
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
-    @UIApplicationDelegate(AppDelegate.self) var delegte
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-      
+        let db = Firestore.firestore()
         return true
     }
 
