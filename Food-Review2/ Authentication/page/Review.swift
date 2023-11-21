@@ -6,27 +6,59 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import Firebase
 
-class Review: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class RestaurantTableViewController: UITableViewController {
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    var restaurants: [DocumentSnapshot] = []
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
+      override func viewDidLoad() {
+          super.viewDidLoad()
 
-    // MARK: - Table view data source
+          // Call a function to fetch data from Firestore
+          fetchDataFromFirestore()
+      }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+      // Function to fetch data from Firestore
+      func fetchDataFromFirestore() {
+          let db = Firestore.firestore()
+
+          db.collection("restaurants").getDocuments { (querySnapshot, error) in
+              if let error = error {
+                  print("Error getting documents: \(error)")
+              } else {
+                  self.restaurants = querySnapshot?.documents ?? []
+                  self.tableView.reloadData()
+              }
+          }
+      }
+
+      // Implement UITableViewDataSource methods
+      override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+          return restaurants.count
+      }
+
+      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          let cell = tableView.dequeueReusableCell(withIdentifier: "restCell", for: indexPath) as! rest
+
+          // Customize the cell using data from the Firestore document
+          let restaurant = restaurants[indexPath.row]
+          cell.nameRest.text = restaurant["rest1"] as? String
+          print(restaurant)
+          // Set other UI elements as needed
+
+          return cell
+      }
+  }
+
+func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
@@ -86,4 +118,4 @@ class Review: UITableViewController {
     }
     */
 
-}
+

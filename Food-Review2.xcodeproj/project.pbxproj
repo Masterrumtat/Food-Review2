@@ -30,6 +30,8 @@
 		E4445A182B054F1B00D1550E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4445A172B054F1B00D1550E /* GoogleSignInSwift */; };
 		E4445A1A2B0550AA00D1550E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4445A192B0550AA00D1550E /* GoogleService-Info.plist */; };
 		E4445A1C2B060FF300D1550E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A1B2B060FF300D1550E /* Review.swift */; };
+		E4445A5A2B0CDEBD00D1550E /* rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A592B0CDEBD00D1550E /* rest.swift */; };
+		E4445A5C2B0CE3EA00D1550E /* testiu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A5B2B0CE3EA00D1550E /* testiu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		E4445A0C2B03B3D900D1550E /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		E4445A192B0550AA00D1550E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4445A1B2B060FF300D1550E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		E4445A592B0CDEBD00D1550E /* rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rest.swift; sourceTree = "<group>"; };
+		E4445A5B2B0CE3EA00D1550E /* testiu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testiu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				E44459942B03A4D600D1550E /* AppDelegate.swift */,
 				E44459962B03A4D600D1550E /* SceneDelegate.swift */,
 				E44459982B03A4D600D1550E /* ViewController.swift */,
+				E4445A5B2B0CE3EA00D1550E /* testiu.swift */,
 				E444599A2B03A4D600D1550E /* Main.storyboard */,
 				E4445A192B0550AA00D1550E /* GoogleService-Info.plist */,
 				607CBC442B0A4B8E00375554 /* Asset Image.xcassets */,
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				E4445A1B2B060FF300D1550E /* Review.swift */,
+				E4445A592B0CDEBD00D1550E /* rest.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -430,9 +436,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44459992B03A4D600D1550E /* ViewController.swift in Sources */,
+				E4445A5A2B0CDEBD00D1550E /* rest.swift in Sources */,
 				E44459952B03A4D600D1550E /* AppDelegate.swift in Sources */,
 				E44459972B03A4D600D1550E /* SceneDelegate.swift in Sources */,
 				E44459D52B03ACD800D1550E /* Authentication.swift in Sources */,
+				E4445A5C2B0CE3EA00D1550E /* testiu.swift in Sources */,
 				E4445A0D2B03B3D900D1550E /* Register.swift in Sources */,
 				E4445A1C2B060FF300D1550E /* Review.swift in Sources */,
 			);
