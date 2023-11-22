@@ -9,7 +9,7 @@ import UIKit
 import FirebaseFirestore
 import Firebase
 
-class RestaurantTbVC: UITableViewController {
+class RestaurantTableViewController: UITableViewController {
 
     var restaurants: [DocumentSnapshot] = []
 
@@ -51,7 +51,6 @@ class RestaurantTbVC: UITableViewController {
 
         let restaurant = restaurants[indexPath.row]
         cell.nameRest.text = restaurant["name"] as? String
-        
         
 
         // Set other UI elements as needed

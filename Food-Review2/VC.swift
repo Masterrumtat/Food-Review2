@@ -6,19 +6,19 @@
 //
 
 import UIKit
-
+import SwiftUI
 class ViewController: UIViewController {
-   let searchController = UISearchController()
+  
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            title = "Search"
-        navigationItem.searchController = searchController
+         
 
         // Do any additional setup after loading the view.
     }
 
-
+   
+    
 }
 
