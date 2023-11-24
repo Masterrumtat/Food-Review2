@@ -15,6 +15,7 @@ class RestaurantTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight=300
 
         // Call a function to fetch data from Firestore
         fetchDataFromFirestore()
@@ -51,6 +52,7 @@ class RestaurantTableViewController: UITableViewController {
 
         let restaurant = restaurants[indexPath.row]
         cell.nameRest.text = restaurant["name"] as? String
+        cell.lbRest.text = restaurant["place"] as? String
         
 
         // Set other UI elements as needed
