@@ -15,6 +15,8 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurants: [DocumentSnapshot] = []
     var Imgrest: [String] = []
+    var imgPlist=ImgPlist()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight=300
@@ -22,6 +24,8 @@ class RestaurantTableViewController: UITableViewController {
         // Call a function to fetch data from Firestore
         fetchDataFromFirestore()
         imgRest()
+        
+        imgPlist.loadPlist(fname: "ImgRest")
     }
     
     // Function to fetch data from Firestore
@@ -43,42 +47,64 @@ class RestaurantTableViewController: UITableViewController {
     
     // Implement UITableViewDataSource methods
     override func numberOfSections(in tableView: UITableView) -> Int {
-           return 1
-       }
-       
-       override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return restaurants.count
-       }
-       
-       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = tableView.dequeueReusableCell(withIdentifier: "restCell", for: indexPath) as! rest
-           
-           let restaurant = restaurants[indexPath.row]
-           cell.nameRest.text = restaurant["name"] as? String
-           cell.lbRest.text = restaurant["place"] as? String
-           
-           if indexPath.row < Imgrest.count {
-               cell.Imgrest.image = UIImage(named: Imgrest[indexPath.row])
-           } else {
-               print("Index out of range for Imgrest array")
-           }
-           
-           // Set other UI elements as needed
-           
-           return cell
-       }
-       
-       // Function to load image names from plist
-       func imgRest() {
-           guard let link = Bundle.main.url(forResource: "restimg", withExtension: "plist"),
-                 let testData = try? Data(contentsOf: link),
-                 let imgRestArray = try? PropertyListSerialization.propertyList(from: testData, options: [], format: nil) as? [String] else {
-               print("Failed to load image names from plist.")
-               return
-           }
-           
-           Imgrest = imgRestArray
-           print(Imgrest)
-       }
-   }
+        return 1
+    }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurants.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "restCell", for: indexPath) as! rest
+        
+        let restaurant = restaurants[indexPath.row]
+        cell.nameRest.text = restaurant["name"] as? String
+        cell.lbRest.text = restaurant["place"] as? String
+        
+        if indexPath.row < Imgrest.count {
+            cell.Imgrest.image = UIImage(named: Imgrest[indexPath.row])
+        } else {
+            print("Index out of range for Imgrest array")
+        }
+//        cell.Imgrest.image = UIImage(named: imgPlist.restAll[indexPath.row])
+        
+        // Set other UI elements as needed
+        
+        return cell
+    }
+    
+    // Function to load image names from plist
+    func imgRest() {
+        guard let link = Bundle.main.url(forResource: "nameRestimg", withExtension: "plist"),
+              let testData = try? Data(contentsOf: link),
+              let imgRestArray = try? PropertyListSerialization.propertyList(from: testData, options: [], format: nil) as? [String] else {
+            print("Failed to load image names from plist.")
+            return
+        }
+        
+        Imgrest = imgRestArray
+        print(Imgrest)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndexPath = self.tableView.indexPathForSelectedRow else {
+            return
+        }
+        
+        if segue.identifier == "passdata" {
+            if let vc = segue.destination as? reviewInfo {
+                let rowClick = selectedIndexPath.row
+                guard rowClick < restaurants.count else {
+                    return
+                }
+                
+                let restaurant = restaurants[rowClick]
+                vc.nameRest=restaurant["name"] as! String
+                vc.location=restaurant["place"] as! String
+                vc.review=restaurant["review"] as! String
+                vc.imgrest=Imgrest[rowClick]
+            }
+        }
+    }
+    
+}
