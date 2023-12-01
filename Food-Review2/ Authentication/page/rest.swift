@@ -11,7 +11,7 @@ class rest: UITableViewCell {
 
     @IBOutlet weak var nameRest: UILabel!
     @IBOutlet weak var lbRest: UILabel!
-    
+    @IBOutlet weak var Imgrest: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
