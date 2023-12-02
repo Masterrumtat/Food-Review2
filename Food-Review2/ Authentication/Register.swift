@@ -21,6 +21,8 @@ class Register: UIViewController {
             
             // Set up the register button
             registerBtn.addTarget(self, action: #selector(registerTapped), for: .touchUpInside)
+            
+            password.isSecureTextEntry = true
         }
         
         @objc func registerTapped() {

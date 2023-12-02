@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bkk_JaeOhKhaoTomPet0.jpg</key>
+	<key>1</key>
 	<array>
 		<string>bkk_JaeOhKhaoTomPet0.jpg</string>
 		<string>bkk_JaeOhKhaoTomPet1.jpg</string>
@@ -17,7 +17,7 @@
 		<string>bkk_JaeOhKhaoTomPet10.jpg</string>
 		<string>bkk_JaeOhKhaoTomPet11.jpg</string>
 	</array>
-	<key>bkk_NhongRimKlong0.jpg</key>
+	<key>2</key>
 	<array>
 		<string>bkk_NhongRimKlong0.jpg</string>
 		<string>bkk_NhongRimKlong1.jpg</string>
@@ -31,7 +31,7 @@
 		<string>bkk_NhongRimKlong9.jpg</string>
 		<string>bkk_NhongRimKlong10.jpg</string>
 	</array>
-	<key>bkk_HARIOCafeBangkok0.jpg</key>
+	<key>3</key>
 	<array>
 		<string>bkk_HARIOCafeBangkok0.jpg</string>
 		<string>bkk_HARIOCafeBangkok1.jpg</string>
@@ -45,7 +45,7 @@
 		<string>bkk_HARIOCafeBangkok9.jpg</string>
 		<string>bkk_HARIOCafeBangkok10.jpg</string>
 	</array>
-	<key>bkk_NANACoffeeRoaster0.jpg</key>
+	<key>4</key>
 	<array>
 		<string>bkk_NANACoffeeRoaster0.jpg</string>
 		<string>bkk_NANACoffeeRoaster1.jpg</string>
@@ -59,7 +59,7 @@
 		<string>bkk_NANACoffeeRoaster9.jpg</string>
 		<string>bkk_NANACoffeeRoaster10.jpg</string>
 	</array>
-	<key>bkk_Puritan0.jpg</key>
+	<key>5</key>
 	<array>
 		<string>bkk_Puritan0.jpg</string>
 		<string>bkk_Puritan1.jpg</string>
@@ -73,7 +73,7 @@
 		<string>bkk_Puritan9.jpg</string>
 		<string>bkk_Puritan10.jpg</string>
 	</array>
-	<key>bkk_LowbatteryCoffee0.jpg</key>
+	<key>6</key>
 	<array>
 		<string>bkk_LowbatteryCoffee0.jpg</string>
 		<string>bkk_LowbatteryCoffee1.jpg</string>
@@ -87,7 +87,7 @@
 		<string>bkk_LowbatteryCoffee9.jpg</string>
 		<string>bkk_LowbatteryCoffee10.jpg</string>
 	</array>
-	<key>bkk_Theoqposite0.jpg</key>
+	<key>7</key>
 	<array>
 		<string>bkk_Theoqposite0.jpg</string>
 		<string>bkk_Theoqposite1.jpg</string>
@@ -101,7 +101,7 @@
 		<string>bkk_Theoqposite9.jpg</string>
 		<string>bkk_Theoqposite10.jpg</string>
 	</array>
-	<key>bkk_WoodbrookBangkok0.jpg</key>
+	<key>8</key>
 	<array>
 		<string>bkk_WoodbrookBangkok0.jpg</string>
 		<string>bkk_WoodbrookBangkok1.jpg</string>
@@ -115,7 +115,7 @@
 		<string>bkk_WoodbrookBangkok9.jpg</string>
 		<string>bkk_WoodbrookBangkok10.jpg</string>
 	</array>
-	<key>bkk_BstoryCafe0.jpg</key>
+	<key>9</key>
 	<array>
 		<string>bkk_BstoryCafe0.jpg</string>
 		<string>bkk_BstoryCafe1.jpg</string>
@@ -129,7 +129,7 @@
 		<string>bkk_BstoryCafe9.jpg</string>
 		<string>bkk_BstoryCafe10.jpg</string>
 	</array>
-	<key>bkk_TrulyScrumptious0.jpg</key>
+	<key>10</key>
 	<array>
 		<string>bkk_TrulyScrumptious0.jpg</string>
 		<string>bkk_TrulyScrumptious1.jpg</string>
@@ -143,7 +143,7 @@
 		<string>bkk_TrulyScrumptious9.jpg</string>
 		<string>bkk_TrulyScrumptious10.jpg</string>
 	</array>
-	<key>bkk_VarenBKK0.jpg</key>
+	<key>11</key>
 	<array>
 		<string>bkk_VarenBKK0.jpg</string>
 		<string>bkk_VarenBKK1.jpg</string>
@@ -158,7 +158,7 @@
 		<string>bkk_VarenBKK10.jpg</string>
 		<string>bkk_VarenBKK11.jpg</string>
 	</array>
-	<key>bkk_SiMorakot0.jpg</key>
+	<key>12</key>
 	<array>
 		<string>bkk_SiMorakot0.jpg</string>
 		<string>bkk_SiMorakot1.jpg</string>
@@ -173,7 +173,7 @@
 		<string>bkk_SiMorakot10.jpg</string>
 		<string>bkk_SiMorakot11.jpg</string>
 	</array>
-	<key>bkk_SomsakPuOb0.jpg</key>
+	<key>13</key>
 	<array>
 		<string>bkk_SomsakPuOb0.jpg</string>
 		<string>bkk_SomsakPuOb1.jpg</string>
@@ -187,7 +187,7 @@
 		<string>bkk_SomsakPuOb9.jpg</string>
 		<string>bkk_SomsakPuOb10.jpg</string>
 	</array>
-	<key>bkk_BluetampCafe0.jpg</key>
+	<key>14</key>
 	<array>
 		<string>bkk_BluetampCafe0.jpg</string>
 		<string>bkk_BluetampCafe1.jpg</string>
@@ -201,7 +201,7 @@
 		<string>bkk_BluetampCafe9.jpg</string>
 		<string>bkk_BluetampCafe10.jpg</string>
 	</array>
-	<key>bkk_WhiteFlowerRestaurant0.jpg</key>
+	<key>15</key>
 	<array>
 		<string>bkk_WhiteFlowerRestaurant0.jpg</string>
 		<string>bkk_WhiteFlowerRestaurant1.jpg</string>
@@ -214,7 +214,7 @@
 		<string>bkk_WhiteFlowerRestaurant8.jpg</string>
 		<string>bkk_WhiteFlowerRestaurant9.jpg</string>
 	</array>
-	<key>bkk_Hanaya0.jpg</key>
+	<key>16</key>
 	<array>
 		<string>bkk_Hanaya0.jpg</string>
 		<string>bkk_Hanaya1.jpg</string>
@@ -228,7 +228,7 @@
 		<string>bkk_Hanaya9.jpg</string>
 		<string>bkk_Hanaya10.jpg</string>
 	</array>
-	<key>bkk_CopperBeyondBuffet0.jpg</key>
+	<key>17</key>
 	<array>
 		<string>bkk_CopperBeyondBuffet0.jpg</string>
 		<string>bkk_CopperBeyondBuffet1.jpg</string>
@@ -242,7 +242,7 @@
 		<string>bkk_CopperBeyondBuffet9.jpg</string>
 		<string>bkk_CopperBeyondBuffet10.jpg</string>
 	</array>
-	<key>bkk_Kallapapreuk0.jpg</key>
+	<key>18</key>
 	<array>
 		<string>bkk_Kallapapreuk0.jpg</string>
 		<string>bkk_Kallapapreuk1.jpg</string>
@@ -255,7 +255,7 @@
 		<string>bkk_Kallapapreuk8.jpg</string>
 		<string>bkk_Kallapapreuk9.jpg</string>
 	</array>
-	<key>bkk_BanNamKiengDin0.jpg</key>
+	<key>19</key>
 	<array>
 		<string>bkk_BanNamKiengDin0.jpg</string>
 		<string>bkk_BanNamKiengDin1.jpg</string>
@@ -269,7 +269,7 @@
 		<string>bkk_BanNamKiengDin9.jpg</string>
 		<string>bkk_BanNamKiengDin10.jpg</string>
 	</array>
-	<key>bkk_AnAnLao0.jpg</key>
+	<key>20</key>
 	<array>
 		<string>bkk_AnAnLao0.jpg</string>
 		<string>bkk_AnAnLao1.jpg</string>
@@ -283,7 +283,7 @@
 		<string>bkk_AnAnLao9.jpg</string>
 		<string>bkk_AnAnLao10.jpg</string>
 	</array>
-	<key>bkk_KruaBangna0.jpg</key>
+	<key>21</key>
 	<array>
 		<string>bkk_KruaBangna0.jpg</string>
 		<string>bkk_KruaBangna1.jpg</string>
@@ -297,7 +297,7 @@
 		<string>bkk_KruaBangna9.jpg</string>
 		<string>bkk_KruaBangna10.jpg</string>
 	</array>
-	<key>bkk_Khinlomchomsaphan0.jpg</key>
+	<key>22</key>
 	<array>
 		<string>bkk_Khinlomchomsaphan0.jpg</string>
 		<string>bkk_Khinlomchomsaphan1.jpg</string>
@@ -310,7 +310,7 @@
 		<string>bkk_Khinlomchomsaphan8.jpg</string>
 		<string>bkk_Khinlomchomsaphan9.jpg</string>
 	</array>
-	<key>bkk_Khinlomchomsaphan1.jpg</key>
+	<key>23</key>
 	<array>
 		<string>bkk_Khinlomchomsaphan0.jpg</string>
 		<string>bkk_Khinlomchomsaphan1.jpg</string>
@@ -323,7 +323,7 @@
 		<string>bkk_Khinlomchomsaphan8.jpg</string>
 		<string>bkk_Khinlomchomsaphan9.jpg</string>
 	</array>
-	<key>bkk_JayFaiPratuPhee0.jpg</key>
+	<key>24</key>
 	<array>
 		<string>bkk_JayFaiPratuPhee0.jpg</string>
 		<string>bkk_JayFaiPratuPhee1.jpg</string>
@@ -337,7 +337,7 @@
 		<string>bkk_JayFaiPratuPhee9.jpg</string>
 		<string>bkk_JayFaiPratuPhee10.jpg</string>
 	</array>
-	<key>bkk_KwayChapMr.Joe0.jpg</key>
+	<key>25</key>
 	<array>
 		<string>bkk_KwayChapMr.Joe0.jpg</string>
 		<string>bkk_KwayChapMr.Joe1.jpg</string>
@@ -351,7 +351,7 @@
 		<string>bkk_KwayChapMr.Joe9.jpg</string>
 		<string>bkk_KwayChapMr.Joe10.jpg</string>
 	</array>
-	<key>bkk_KhaoJao0.jpg</key>
+	<key>26</key>
 	<array>
 		<string>bkk_KhaoJao0.jpg</string>
 		<string>bkk_KhaoJao1.jpg</string>
@@ -365,7 +365,7 @@
 		<string>bkk_KhaoJao9.jpg</string>
 		<string>bkk_KhaoJao10.jpg</string>
 	</array>
-	<key>bkk_CharoensaengSilom0.jpg</key>
+	<key>27</key>
 	<array>
 		<string>bkk_CharoensaengSilom0.jpg</string>
 		<string>bkk_CharoensaengSilom1.jpg</string>
@@ -379,7 +379,7 @@
 		<string>bkk_CharoensaengSilom9.jpg</string>
 		<string>bkk_CharoensaengSilom10.jpg</string>
 	</array>
-	<key>bkk_MuKrobNaiSai0.jpg</key>
+	<key>28</key>
 	<array>
 		<string>bkk_MuKrobNaiSai0.jpg</string>
 		<string>bkk_MuKrobNaiSai1.jpg</string>
@@ -393,7 +393,7 @@
 		<string>bkk_MuKrobNaiSai9.jpg</string>
 		<string>bkk_MuKrobNaiSai10.jpg</string>
 	</array>
-	<key>bkk_TuangDimSum0.jpg</key>
+	<key>29</key>
 	<array>
 		<string>bkk_TuangDimSum0.jpg</string>
 		<string>bkk_TuangDimSum1.jpg</string>
@@ -408,7 +408,7 @@
 		<string>bkk_TuangDimSum10.jpg</string>
 		<string>bkk_TuangDimSum11.jpg</string>
 	</array>
-	<key>bkk_JokeSamYaan0.jpg</key>
+	<key>30</key>
 	<array>
 		<string>bkk_JokeSamYaan0.jpg</string>
 		<string>bkk_JokeSamYaan1.jpg</string>

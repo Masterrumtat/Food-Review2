@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>16:30 - 23:59</string>
+	<string>08:30 - 16:00</string>
+	<string>07:00 - 20:00</string>
+	<string>07:00 - 18:00</string>
+	<string>13:00 - 22:00</string>
+	<string>09:00 - 21:00</string>
+	<string>09:30 - 20:00</string>
+	<string>10:00 - 19:00</string>
+	<string>10:00 - 23:00</string>
+	<string>09:00 - 17:00</string>
+	<string>08:00 - 17:00</string>
+	<string>09:00 - 16:00</string>
+	<string>16:00 - 21:00</string>
+	<string>08:00 - 18:00</string>
+	<string>10:00 - 22:00</string>
+	<string>11:30 - 22:00</string>
+	<string>12:00 - 21:00</string>
+	<string>09:00 - 16:30</string>
+	<string>12:00 - 22:00</string>
+	<string>10:00 - 22:00</string>
+	<string>07:00 - 21:00</string>
+	<string>11:00 - 23:00</string>
+	<string>11:00 - 23:00</string>
+	<string>09:00 - 19:30</string>
+	<string>07:30 - 16:30</string>
+	<string>10:00 - 20:00</string>
+	<string>07:30 - 13:00</string>
+	<string>08:00 - 14:00</string>
+	<string>07:30 - 15:00</string>
+	<string>09:00 - 20:00</string>
+</array>
+</plist>

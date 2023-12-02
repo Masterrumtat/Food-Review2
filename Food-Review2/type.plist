@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>ร้านข้าวต้ม</string>
+	<string>อาหารจานเดียว,อาหารไทย</string>
+	<string>คาเฟ่,ร้านกาแฟ/ชา</string>
+	<string>ร้านกาแฟ/ชา,คาเฟ่</string>
+	<string>คาเฟ่</string>
+	<string>ร้านกาแฟ/ชา,คาเฟ่,เบเกอรี/เค้ก</string>
+	<string>คาเฟ่,ของหวาน</string>
+	<string>คาเฟ่</string>
+	<string>คาเฟ่</string>
+	<string>คาเฟ่,เบเกอรี/เค้ก</string>
+	<string>ร้านกาแฟ/ชา,คาเฟ่,อาหารไทย</string>
+	<string>อาหารจานเดียว,ฟาสต์ฟู้ด/จานด่วน</string>
+	<string>อาหารทะเล,สตรีทฟู้ด/รถเข็น,อาหารไทย</string>
+	<string>ร้านกาแฟ/ชา,คาเฟ่,อาหารเช้า</string>
+	<string>อาหารไทย</string>
+	<string>อาหารญี่ปุ่น</string>
+	<string>บุฟเฟ่ต์,อาหารนานาชาติ</string>
+	<string>เบเกอรี/เค้ก,อาหารไทย</string>
+	<string>อาหารนานาชาติ,อาหารจีน,อาหารไทย</string>
+	<string>อาหารจีน,อาหารทะเล,อาหารไทย</string>
+	<string>อาหารไทย</string>
+	<string>อาหารทะเล,อาหารไทย,ร้านริมน้ำ</string>
+	<string>อาหารทะเล,อาหารไทย,ร้านริมน้ำ</string>
+	<string>อาหารไทย,อาหารทะเล,สตรีทฟู้ด/รถเข็น</string>
+	<string>อาหารจานเดียว</string>
+	<string>อาหารใต้,อาหารอีสาน/ร้านส้มตำ</string>
+	<string>อาหารจานเดียว</string>
+	<string>อาหารไทย,อาหารจานเดียว,อาหารจีน</string>
+	<string>ติ่มซำ</string>
+	<string>อาหารเช้า,อาหารจานเดียว</string>
+</array>
+</plist>

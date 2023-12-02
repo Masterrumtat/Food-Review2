@@ -16,6 +16,9 @@ class RestaurantTableViewController: UITableViewController {
     var restaurants: [DocumentSnapshot] = []
     var Imgrest: [String] = []
     var imgPlist=ImgPlist()
+    var typerest: [String] = []
+    var openclose: [String] = []
+    var collec: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,8 @@ class RestaurantTableViewController: UITableViewController {
         // Call a function to fetch data from Firestore
         fetchDataFromFirestore()
         imgRest()
+        typeRest()
+        OpenClose()
         
         imgPlist.loadPlist(fname: "ImgRest")
     }
@@ -66,7 +71,6 @@ class RestaurantTableViewController: UITableViewController {
         } else {
             print("Index out of range for Imgrest array")
         }
-//        cell.Imgrest.image = UIImage(named: imgPlist.restAll[indexPath.row])
         
         // Set other UI elements as needed
         
@@ -85,6 +89,26 @@ class RestaurantTableViewController: UITableViewController {
         Imgrest = imgRestArray
         print(Imgrest)
     }
+    func typeRest() {
+        guard let link = Bundle.main.url(forResource: "type", withExtension: "plist"),
+              let testData = try? Data(contentsOf: link),
+              let typeRestArray = try? PropertyListSerialization.propertyList(from: testData, options: [], format: nil) as? [String] else {
+            print("Failed to load image names from plist.")
+            return
+        }
+    
+        typerest = typeRestArray
+    }
+    func OpenClose() {
+        guard let link = Bundle.main.url(forResource: "open-close", withExtension: "plist"),
+              let testData = try? Data(contentsOf: link),
+              let OpenCloseArray = try? PropertyListSerialization.propertyList(from: testData, options: [], format: nil) as? [String] else {
+            print("Failed to load image names from plist.")
+            return
+        }
+    
+        openclose = OpenCloseArray
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedIndexPath = self.tableView.indexPathForSelectedRow else {
@@ -102,9 +126,14 @@ class RestaurantTableViewController: UITableViewController {
                 vc.nameRest=restaurant["name"] as! String
                 vc.location=restaurant["place"] as! String
                 vc.review=restaurant["review"] as! String
+                
                 vc.imgrest=Imgrest[rowClick]
+                vc.TypeRest=typerest[rowClick]
+                vc.OpenClose=openclose[rowClick]
+                
+                collec=imgPlist.restAll[rowClick]
+                vc.collecView=imgPlist.ImgRest[collec]!
             }
         }
     }
-    
 }

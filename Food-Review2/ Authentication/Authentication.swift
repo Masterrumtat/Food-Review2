@@ -26,6 +26,8 @@ class Authentication: UIViewController {
         
         // Set initial text for the register label
         registerLabel.text = "" // Initially set the label text to empty
+        
+        password.isSecureTextEntry = true
     }
     
     @objc func signInTapped() {
