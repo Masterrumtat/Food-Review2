@@ -7,7 +7,7 @@
 
 import UIKit
 
-class reviewInfo: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class reviewInfo: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var nameRest:String=""
     var location:String=""
@@ -16,10 +16,10 @@ class reviewInfo: UIViewController,UICollectionViewDelegate,UICollectionViewData
     
     var collecView:[String]=[]
     var imgPlist=ImgPlist()
-    
+    var reviewInfo: reviewInfo?
+
     var TypeRest:String=""
     var OpenClose:String=""
-
     @IBOutlet weak var imgRest: UIImageView!
     @IBOutlet weak var lbRest: UILabel!
     @IBOutlet weak var lbLocation: UILabel!
@@ -40,19 +40,25 @@ class reviewInfo: UIViewController,UICollectionViewDelegate,UICollectionViewData
         openClose.text=OpenClose
         
         imgPlist.loadPlist(fname: "ImgRest")
-
+        
         // Do any additional setup after loading the view.
         
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 250, height: 200)
-                flowLayout.minimumLineSpacing = 10
-                flowLayout.minimumInteritemSpacing = 10
-                flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-
-        flowLayout.scrollDirection = .horizontal
-        
-        collectView.collectionViewLayout = flowLayout
-    }
+            flowLayout.itemSize = CGSize(width: 250, height: 200)
+            flowLayout.minimumLineSpacing = 10
+            flowLayout.minimumInteritemSpacing = 10
+            flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            flowLayout.scrollDirection = .horizontal
+            
+            // Set paging behavior
+            flowLayout.scrollDirection = .horizontal
+            flowLayout.minimumLineSpacing = 0
+            
+            collectView.collectionViewLayout = flowLayout
+            collectView.isPagingEnabled = true
+            collectView.delegate = self
+            collectView.dataSource = self
+        }
     
 
     /*

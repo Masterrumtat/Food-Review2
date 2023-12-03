@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ncb-hL-NVV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bLk-pE-xQN">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -148,6 +148,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPa-LB-c5A">
+                                <rect key="frame" x="109" y="756" width="175" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="ndr-ia-yAq" kind="show" id="elm-5W-fp3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w67-ml-act"/>
                         <color key="backgroundColor" red="0.92156863209999995" green="0.92156863209999995" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -163,9 +172,9 @@
         <!--Restaurant Table View Controller-->
         <scene sceneID="ak7-gd-Tfd">
             <objects>
-                <tableViewController storyboardIdentifier="Review" id="ndr-ia-yAq" customClass="RestaurantTableViewController" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Review" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ndr-ia-yAq" customClass="RestaurantTableViewController" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xXy-T5-I5U">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -218,9 +227,9 @@
         <!--Review Info-->
         <scene sceneID="Ds8-nx-JVv">
             <objects>
-                <viewController id="jfF-hm-aCH" customClass="reviewInfo" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="swipeInfo" id="jfF-hm-aCH" customClass="reviewInfo" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQq-9g-h7l">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-vK-2de">
@@ -320,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3H-Kd-8gE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041.9847328244275" y="776.76056338028172"/>
+            <point key="canvasLocation" x="1053" y="1625"/>
         </scene>
         <!--Register-->
         <scene sceneID="bF2-na-x0N">
@@ -424,6 +433,9 @@
             <point key="canvasLocation" x="1144.2748091603053" y="-1.4084507042253522"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="elm-5W-fp3"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background (2)" width="1080" height="1920"/>
         <image name="Background (3)" width="1080" height="1920"/>

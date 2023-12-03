@@ -31,9 +31,10 @@ class Swiping: UIViewController {
         cardImageView.addGestureRecognizer(panGestureRecognizer)
         // Add a pan gesture recognizer to the cardImageView
     }
-    
+   
+
     func loadImagesFromPlist() {
-        if let path = Bundle.main.path(forResource: "restimg", ofType: "plist"),
+        if let path = Bundle.main.path(forResource: "nameRestimg", ofType: "plist"),
            let array = NSArray(contentsOfFile: path) as? [String] {
             images = array
             print("Loaded \(images.count) images from plist.")
@@ -57,57 +58,68 @@ class Swiping: UIViewController {
             print("Image not found: \(imageName)")
         }
     }
-        @objc private func handlePan(_ sender: UIPanGestureRecognizer) {
-            switch sender.state {
-            case .began:
-                initialPanPoint = sender.translation(in: cardImageView)
-            case .changed:
-                let translation = sender.translation(in: cardImageView)
-                cardImageView.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
-            case .ended:
-                let translation = sender.translation(in: cardImageView)
-                let velocity = sender.velocity(in: cardImageView)
-                
-                if translation.x > 100 {
-                    swipeRight()
-                } else if translation.x < -100 {
-                    swipeLeft()
-                } else {
-                    resetCardPosition()
-                }
-                
-                initialPanPoint = CGPoint()
-            default:
-                break
-            }
-        }
-        
-        private func swipeRight() {
-            print("Swiped right")
-            goToNextImage()
-            resetCardPosition()
-        }
-        
-        private func swipeLeft() {
-            print("Swiped left")
-            goToNextImage()
-            resetCardPosition()
-        }
-        
-        private func resetCardPosition() {
-            UIView.animate(withDuration: 0.3) {
-                self.cardImageView.transform = .identity
-            }
-        }
-        
-        private func goToNextImage() {
-            currentImageIndex += 1
+    @objc private func handlePan(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began:
+            initialPanPoint = sender.translation(in: cardImageView)
+        case .changed:
+            let translation = sender.translation(in: cardImageView)
+            cardImageView.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
+        case .ended:
+            let translation = sender.translation(in: cardImageView)
+            let velocity = sender.velocity(in: cardImageView)
             
-            if currentImageIndex < images.count {
-                showImage()
+            if translation.x > 100 {
+                swipeRight()
+            } else if translation.x < -100 {
+                swipeLeft()
             } else {
-                print("End of images")
+                resetCardPosition()
             }
+            
+            initialPanPoint = CGPoint()
+        default:
+            break
         }
     }
+    private func animateCardRemoval() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.cardImageView.alpha = 0.0
+        }) { _ in
+            self.resetCardPosition()
+            self.cardImageView.alpha = 1.0
 
+            // After animation completes, perform the segue to ReviewInfoViewController
+            self.performSegue(withIdentifier: "swipeInfo", sender: nil)
+        }
+    }
+    
+    private func swipeRight() {
+        print("Swiped right")
+        goToNextImage()
+        resetCardPosition()
+    }
+    
+    private func swipeLeft() {
+        print("Swiped left")
+        
+        goToNextImage()
+        resetCardPosition()
+    }
+    
+    private func resetCardPosition() {
+        UIView.animate(withDuration: 0.3) {
+            self.cardImageView.transform = .identity
+        }
+    }
+    
+    private func goToNextImage() {
+        currentImageIndex += 1
+        
+        if currentImageIndex < images.count {
+            showImage()
+        } else {
+            print("End of images")
+        }
+    }
+}
