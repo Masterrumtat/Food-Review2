@@ -14,8 +14,11 @@ class Register: UIViewController {
         @IBOutlet weak var email: UITextField!
         @IBOutlet weak var password: UITextField!
         @IBOutlet weak var registerBtn: UIButton!
-        
-        
+    
+        @IBAction func btnRegister(_ sender: Any) {
+            dismiss(animated: true, completion: nil)
+        }
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             

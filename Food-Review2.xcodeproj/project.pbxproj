@@ -184,16 +184,15 @@
 				E44459D32B03AC8300D1550E /*  Authentication */,
 				E44459942B03A4D600D1550E /* AppDelegate.swift */,
 				E44459962B03A4D600D1550E /* SceneDelegate.swift */,
-				E44459982B03A4D600D1550E /* Swiping.swift */,
 				60B7CFBE2B1D6E49008B3D1C /* GoogleService-Info.plist */,
 				E4445B152B15CA1B00D1550E /* restimg.plist */,
 				60ABB16B2B19F51D0069AD82 /* ImgRest.plist */,
 				60ABB16F2B1A29200069AD82 /* nameRestimg.plist */,
 				6064044F2B1B01430015342C /* type.plist */,
 				606404512B1B01650015342C /* open-close.plist */,
+				60ABB16D2B1A065A0069AD82 /* ImgPlist.swift */,
 				E444599A2B03A4D600D1550E /* Main.storyboard */,
 				60B7CFC02B1D74ED008B3D1C /* NC.swift */,
-				60ABB16D2B1A065A0069AD82 /* ImgPlist.swift */,
 				6064044D2B1AF38F0015342C /* CollectionViewCell.swift */,
 				607CBC442B0A4B8E00375554 /* Asset Image.xcassets */,
 				E444599F2B03A4D800D1550E /* LaunchScreen.storyboard */,
@@ -235,6 +234,7 @@
 				E4445A1B2B060FF300D1550E /* review.swift */,
 				60ABB1692B19EBE30069AD82 /* reviewInfo.swift */,
 				E4445A592B0CDEBD00D1550E /* rest.swift */,
+				E44459982B03A4D600D1550E /* Swiping.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
