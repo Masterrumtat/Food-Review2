@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bLk-pE-xQN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Authentication-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Authentication" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Authentication" id="BYZ-38-t0r" customClass="Authentication" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,11 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--NC-->
         <scene sceneID="bTh-Wp-TAY">
             <objects>
-                <navigationController id="Ncb-hL-NVV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNC" id="Ncb-hL-NVV" customClass="NC" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CQL-Mk-1yW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V06-9a-myR">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -135,7 +136,7 @@
         <!--Swiping-->
         <scene sceneID="HQ5-Vc-WdK">
             <objects>
-                <viewController id="bLk-pE-xQN" customClass="Swiping" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="bLk-pE-xQN" customClass="Swiping" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLE-S1-HKR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,12 +150,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPa-LB-c5A">
-                                <rect key="frame" x="109" y="756" width="175" height="72"/>
+                                <rect key="frame" x="109" y="606" width="175" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.89019608500000003" green="0.39215683940000001" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Check Review"/>
                                 <connections>
-                                    <segue destination="ndr-ia-yAq" kind="show" id="elm-5W-fp3"/>
+                                    <action selector="btnCheck:" destination="bLk-pE-xQN" eventType="touchUpInside" id="PvZ-L1-H4M"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,14 +169,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh3-Gd-USP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="1624.6478873239437"/>
+            <point key="canvasLocation" x="91" y="1625"/>
         </scene>
         <!--Restaurant Table View Controller-->
         <scene sceneID="ak7-gd-Tfd">
             <objects>
                 <tableViewController storyboardIdentifier="Review" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ndr-ia-yAq" customClass="RestaurantTableViewController" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xXy-T5-I5U">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -229,7 +231,7 @@
             <objects>
                 <viewController restorationIdentifier="swipeInfo" id="jfF-hm-aCH" customClass="reviewInfo" customModule="Food_Review2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQq-9g-h7l">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-vK-2de">
@@ -433,9 +435,6 @@
             <point key="canvasLocation" x="1144.2748091603053" y="-1.4084507042253522"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="elm-5W-fp3"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background (2)" width="1080" height="1920"/>
         <image name="Background (3)" width="1080" height="1920"/>

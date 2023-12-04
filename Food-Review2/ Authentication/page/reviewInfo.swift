@@ -20,6 +20,7 @@ class reviewInfo: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 
     var TypeRest:String=""
     var OpenClose:String=""
+    
     @IBOutlet weak var imgRest: UIImageView!
     @IBOutlet weak var lbRest: UILabel!
     @IBOutlet weak var lbLocation: UILabel!

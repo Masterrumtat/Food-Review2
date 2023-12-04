@@ -11,8 +11,12 @@ import UIKit
 
 class Swiping: UIViewController {
     
-    @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var dislikeButton: UIButton!
+    @IBAction func btnCheck(_ sender: Any) {
+        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mvc = storyBoard.instantiateViewController(identifier: "MainNC") as! NC
+        self.view.window?.rootViewController = mvc
+    }
+    
     @IBOutlet weak var cardImageView: UIImageView!
     
     private var images: [String] = []  // Assume you have an array of image names

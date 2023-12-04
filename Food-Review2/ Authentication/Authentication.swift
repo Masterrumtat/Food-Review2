@@ -44,9 +44,9 @@ class Authentication: UIViewController {
                 } else {
                     // Update the register label text
                     registerLabel.text = "The email address or password is incorrect. Please retry"
-                    let nextViewControllerID = "Review"
-                    let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: nextViewControllerID) as! UITableViewController
-                    self.present(nextViewController, animated: true, completion: nil)
+                    let nextViewControllerID = "Main"
+                    let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: nextViewControllerID) as! UIViewController
+                    self.view.window?.rootViewController = nextViewController
                     print("log")// Update the label text to "ลงทะเบียนสำเร็จ"
                 }
             }

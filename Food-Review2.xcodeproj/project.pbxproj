@@ -16,6 +16,8 @@
 		60ABB16C2B19F51D0069AD82 /* ImgRest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60ABB16B2B19F51D0069AD82 /* ImgRest.plist */; };
 		60ABB16E2B1A065A0069AD82 /* ImgPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABB16D2B1A065A0069AD82 /* ImgPlist.swift */; };
 		60ABB1702B1A29200069AD82 /* nameRestimg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60ABB16F2B1A29200069AD82 /* nameRestimg.plist */; };
+		60B7CFBF2B1D6E49008B3D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60B7CFBE2B1D6E49008B3D1C /* GoogleService-Info.plist */; };
+		60B7CFC12B1D74ED008B3D1C /* NC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B7CFC02B1D74ED008B3D1C /* NC.swift */; };
 		82416D65CEC017AB4972E217 /* Pods_Food_Review2_Food_Review2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868146AE0585D0770B12F076 /* Pods_Food_Review2_Food_Review2UITests.framework */; };
 		B2FE4D2A542A103E4068C533 /* Pods_Food_Review2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C0CEC4B94F84DBA0064598 /* Pods_Food_Review2Tests.framework */; };
 		E44459952B03A4D600D1550E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44459942B03A4D600D1550E /* AppDelegate.swift */; };
@@ -38,7 +40,6 @@
 		E4445A1C2B060FF300D1550E /* review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A1B2B060FF300D1550E /* review.swift */; };
 		E4445A5A2B0CDEBD00D1550E /* rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4445A592B0CDEBD00D1550E /* rest.swift */; };
 		E4445B162B15CA1B00D1550E /* restimg.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4445B152B15CA1B00D1550E /* restimg.plist */; };
-		E4CA928D2B1C77EA0098197D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4CA928C2B1C77EA0098197D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		60ABB16B2B19F51D0069AD82 /* ImgRest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ImgRest.plist; sourceTree = "<group>"; };
 		60ABB16D2B1A065A0069AD82 /* ImgPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgPlist.swift; sourceTree = "<group>"; };
 		60ABB16F2B1A29200069AD82 /* nameRestimg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nameRestimg.plist; sourceTree = "<group>"; };
+		60B7CFBE2B1D6E49008B3D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60B7CFC02B1D74ED008B3D1C /* NC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC.swift; sourceTree = "<group>"; };
 		862828447737AFF5F7D9B976 /* Pods-Food-Review2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Review2.release.xcconfig"; path = "Target Support Files/Pods-Food-Review2/Pods-Food-Review2.release.xcconfig"; sourceTree = "<group>"; };
 		868146AE0585D0770B12F076 /* Pods_Food_Review2_Food_Review2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Review2_Food_Review2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAB3C10AA9BEC1E721EEC89 /* Pods-Food-Review2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Review2Tests.release.xcconfig"; path = "Target Support Files/Pods-Food-Review2Tests/Pods-Food-Review2Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +96,6 @@
 		E4445A1B2B060FF300D1550E /* review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = review.swift; sourceTree = "<group>"; };
 		E4445A592B0CDEBD00D1550E /* rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rest.swift; sourceTree = "<group>"; };
 		E4445B152B15CA1B00D1550E /* restimg.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = restimg.plist; sourceTree = "<group>"; };
-		E4CA928C2B1C77EA0098197D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,13 +185,14 @@
 				E44459942B03A4D600D1550E /* AppDelegate.swift */,
 				E44459962B03A4D600D1550E /* SceneDelegate.swift */,
 				E44459982B03A4D600D1550E /* Swiping.swift */,
-				E4CA928C2B1C77EA0098197D /* GoogleService-Info.plist */,
+				60B7CFBE2B1D6E49008B3D1C /* GoogleService-Info.plist */,
 				E4445B152B15CA1B00D1550E /* restimg.plist */,
 				60ABB16B2B19F51D0069AD82 /* ImgRest.plist */,
 				60ABB16F2B1A29200069AD82 /* nameRestimg.plist */,
 				6064044F2B1B01430015342C /* type.plist */,
 				606404512B1B01650015342C /* open-close.plist */,
 				E444599A2B03A4D600D1550E /* Main.storyboard */,
+				60B7CFC02B1D74ED008B3D1C /* NC.swift */,
 				60ABB16D2B1A065A0069AD82 /* ImgPlist.swift */,
 				6064044D2B1AF38F0015342C /* CollectionViewCell.swift */,
 				607CBC442B0A4B8E00375554 /* Asset Image.xcassets */,
@@ -361,11 +364,11 @@
 			files = (
 				606404522B1B01650015342C /* open-close.plist in Resources */,
 				E44459A12B03A4D800D1550E /* LaunchScreen.storyboard in Resources */,
-				E4CA928D2B1C77EA0098197D /* GoogleService-Info.plist in Resources */,
 				E4445B162B15CA1B00D1550E /* restimg.plist in Resources */,
 				60ABB16C2B19F51D0069AD82 /* ImgRest.plist in Resources */,
 				60ABB1702B1A29200069AD82 /* nameRestimg.plist in Resources */,
 				E444599C2B03A4D600D1550E /* Main.storyboard in Resources */,
+				60B7CFBF2B1D6E49008B3D1C /* GoogleService-Info.plist in Resources */,
 				606404502B1B01430015342C /* type.plist in Resources */,
 				607CBC452B0A4B8E00375554 /* Asset Image.xcassets in Resources */,
 			);
@@ -467,6 +470,7 @@
 				E4445A5A2B0CDEBD00D1550E /* rest.swift in Sources */,
 				E44459952B03A4D600D1550E /* AppDelegate.swift in Sources */,
 				E44459972B03A4D600D1550E /* SceneDelegate.swift in Sources */,
+				60B7CFC12B1D74ED008B3D1C /* NC.swift in Sources */,
 				E44459D52B03ACD800D1550E /* Authentication.swift in Sources */,
 				60ABB16E2B1A065A0069AD82 /* ImgPlist.swift in Sources */,
 				E4445A0D2B03B3D900D1550E /* Register.swift in Sources */,
