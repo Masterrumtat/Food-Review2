@@ -9,6 +9,7 @@
 
 import UIKit
 
+
 class Swiping: UIViewController {
     
     @IBAction func btnCheck(_ sender: Any) {
@@ -71,7 +72,6 @@ class Swiping: UIViewController {
             cardImageView.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
         case .ended:
             let translation = sender.translation(in: cardImageView)
-            let velocity = sender.velocity(in: cardImageView)
             
             if translation.x > 100 {
                 swipeRight()
@@ -93,7 +93,6 @@ class Swiping: UIViewController {
             self.resetCardPosition()
             self.cardImageView.alpha = 1.0
 
-            // After animation completes, perform the segue to ReviewInfoViewController
             self.performSegue(withIdentifier: "swipeInfo", sender: nil)
         }
     }

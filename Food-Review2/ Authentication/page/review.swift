@@ -13,7 +13,7 @@ import Firebase
 
 class RestaurantTableViewController: UITableViewController {
     
-    var restaurants: [DocumentSnapshot] = []
+    var restaurants: [DocumentSnapshot] = []          //DocumentSnapshot คือตัวแทนของเอกสารในฐานข้อมูล Firestore
     var Imgrest: [String] = []
     var imgPlist=ImgPlist()
     var typerest: [String] = []
@@ -29,7 +29,6 @@ class RestaurantTableViewController: UITableViewController {
         imgRest()
         typeRest()
         OpenClose()
-        
         imgPlist.loadPlist(fname: "ImgRest")
     }
     

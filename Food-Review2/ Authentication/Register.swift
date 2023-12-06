@@ -29,6 +29,7 @@ class Register: UIViewController {
         }
         
         @objc func registerTapped() {
+            view.endEditing(true)
             // Get the user's name, email address, and password
             let name = name.text!
             let email = email.text!
@@ -61,5 +62,7 @@ class Register: UIViewController {
                 }
             }
         }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-
+}
